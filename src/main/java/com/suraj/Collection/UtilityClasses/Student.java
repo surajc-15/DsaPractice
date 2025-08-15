@@ -1,4 +1,4 @@
-package com.suraj.Collection.ListInterface;
+package com.suraj.Collection.UtilityClasses;
 
 public class Student
 {
