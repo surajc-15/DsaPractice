@@ -48,7 +48,7 @@ public class HashMapPraactice {
         for (Map.Entry<Integer, Student> entry : details.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
-
+    
         // Clearing the HashMap
 //        details.clear();
         System.out.println("HashMap after clearing: " + details);
