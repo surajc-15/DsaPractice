@@ -52,7 +52,7 @@ public class ConcurrentHashMapPractice {
         // Get a value from the map
         logger.info("ConcurrentHashMap created successfully");
         logger.info("map data is: " + map);
-        logger.
+
 
         Integer value = map.get("Two");
         System.out.println("Value for key 'Two': " + value);
