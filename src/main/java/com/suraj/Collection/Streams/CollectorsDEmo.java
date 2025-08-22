@@ -56,5 +56,31 @@ public class CollectorsDEmo {
         System.out.println("Total number of names: " + countByLength);
 
 
+
+        //Example:1 Collecting names by Length
+        List<String> namesList= Arrays.asList("Suraj", "Rohit", "Amit", "Sanjay", "Ravi");
+        System.out.println(nameList.stream().collect(Collectors.groupingBy(String::length)));;
+
+        //Example2 Counting word occurances
+        String sentence="Hello world Hello World";
+        Arrays.stream(sentence.split(" ")).collect(Collectors.groupingBy(x->x, Collectors.counting()))
+                .forEach((word, countWord) -> System.out.println(word + ": " + countWord));
+
+        //xample3: Creating a map from fruits Stream elements
+        List<String> fruits = Arrays.asList("Apple", "Banana", "Cherry", "Date", "Elderberry");
+        var fruitMap = fruits.stream().collect(Collectors.toMap(
+                fruit -> fruit.toUpperCase(), // Key: fruit name
+                fruit -> fruit.length() // Value: length of the fruit name
+        ));
+        System.out.println("Fruit names and their lengths: " + fruitMap);
+
+        //Example using toMap count no of words merge function
+        List<String> words = Arrays.asList("apple", "banana", "apple", "orange", "banana", "kiwi");
+        var wordCountMap = words.stream().collect(Collectors.toMap(
+                word -> word,value->1,(x,y)->x+y));// Count occurrences of each word);
+        System.out.println("Word counts: " + wordCountMap);
+
     }
 }
+
+
