@@ -33,7 +33,11 @@ public class IteratorDemo {
             }
         }
         System.out.println("After removing even numbers: " + numbers);
-        // Example of using Iterator with a Set
+
+        System.out.println(10/4); // This will print 2, as it performs integer division
+        System.out.println(10.0/4); // This will print 2.5
+        System.out.println(10/4.0); // This will also print 2.5
+        System.out.println(10.0/4.0); // This will print 2.5
 
     }
 }
