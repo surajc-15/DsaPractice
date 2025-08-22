@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class StreamsPreREquisite {
-    private static final Logger logger=Logger.getLogger(StreamsPreREquisite.class.getName());
+    static final Logger logger=Logger.getLogger(StreamsPreREquisite.class.getName());
     public static void main(String[] args) {
         // Example usage of Streams in Java
         // This is a placeholder for your stream operations
