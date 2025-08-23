@@ -56,6 +56,9 @@ public class SEtDemo {
         set3.add(20);
         set3.add(15);
         System.out.println(set3); // Output: [10, 15, 20]
+        for(Integer num:set3){
+            System.out.println(num);
+        }
 
         //TreeSet example
         TreeSet<Integer> treeSet=new TreeSet<>();
